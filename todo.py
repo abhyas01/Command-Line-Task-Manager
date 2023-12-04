@@ -76,9 +76,13 @@ class Tasks:
                     created=task['created'],
                     completed=task['completed']
                 ) for task in saved_tasks]
-                Task.max_task_id = max(task.unique_id for task in self.tasks)
+                if self.tasks:
+                    Task.max_task_id = max(task.unique_id for task in self.tasks)
+                else:
+                    Task.max_task_id = 0
         except FileNotFoundError:
             self.tasks = []
+            Task.max_task_id = 0
 
     def pickle_tasks(self):
         """Pickles your task list to a file"""
