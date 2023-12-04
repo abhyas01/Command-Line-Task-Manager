@@ -116,6 +116,14 @@ class Tasks:
     def report_tasks(self):
         """List all tasks, including both completed and incomplete tasks."""
         # Display all tasks
+        if not self.tasks:
+            print("No tasks to report.")
+            return
+
+        max_task_name_length = max(len(task.name) for task in self.tasks)
+        max_created_length = max(len(task.created.strftime("%a %b %d %H:%M:%S %Z %Y")) for task in self.tasks)
+        max_completed_length = max(len(task.completed.strftime("%a %b %d %H:%M:%S %Z %Y")) if task.completed else 0 for task in self.tasks)
+
         self.display_tasks(self.tasks)
 
     def display_tasks(self, tasks_to_display, list_view=False):
