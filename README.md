@@ -10,7 +10,7 @@ This command-line task manager application can be made executable and run from a
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/abhyas01/Command-Line-Task-Manager
 cd <repository-directory>
 ```
 
