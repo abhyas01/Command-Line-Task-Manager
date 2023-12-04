@@ -25,13 +25,7 @@ Choose a directory that is included in your system's $PATH variable. Common choi
 sudo mv todo.py /usr/local/bin/todo
 ```
 
-### 4. Move the .pickle File to the Home Directory
-To make the .pickle file accessible from anywhere, move it to the user's home directory and rename it to .todo.pickle. This file is hidden as it starts with a dot.
-```bash
-mv .todo.pickle ~/
-```
-
-### 5. Run the Task Manager
+### 4. Run the Task Manager
 Now you can run the task manager from any location using the following command:
 ```bash
 todo
