@@ -11,7 +11,7 @@ This command-line task manager application can be made executable and run from a
 
 ```bash
 git clone https://github.com/abhyas01/Command-Line-Task-Manager
-cd <repository-directory>
+cd Command-Line-Task-Manager
 ```
 
 ### 2. Change the Running Mode
