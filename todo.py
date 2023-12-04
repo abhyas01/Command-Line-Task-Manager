@@ -136,7 +136,7 @@ class Tasks:
             print("--   ---  --------   --------   ----")
             for task in tasks_to_display:
                 age = (datetime.now() - task.created).days
-                due_date = task.due_date.strftime("%m/%d/%Y") if task.due_date else '-'
+                due_date = task.due_date.strftime("%Y-%m-%d") if task.due_date else '-'
                 print(f"{task.unique_id:<4} {age:<4} {due_date:<11} {task.priority:<9} {task.name}")
         else:
             print("ID   Age  Due Date   Priority   Task" + " " * (max_task_name_length - len("Task")) +
@@ -147,7 +147,7 @@ class Tasks:
                   "   -------------------------" + " " * (max_completed_length - len("Completed")))
             for task in tasks_to_display:
                 age = (datetime.now() - task.created).days
-                due_date = task.due_date.strftime("%m/%d/%Y") if task.due_date else '-'
+                due_date = task.due_date.strftime("%Y-%m-%d") if task.due_date else '-'
                 created = task.created.strftime("%a %b %d %H:%M:%S %Z %Y")
                 completed = task.completed.strftime("%a %b %d %H:%M:%S %Z %Y") if task.completed else '-'
                 print(f"{task.unique_id:<4} {age:<4} {due_date:<11} {task.priority:<9} {task.name:<{max_task_name_length}} "
