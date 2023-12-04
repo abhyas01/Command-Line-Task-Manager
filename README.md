@@ -78,3 +78,8 @@ todo --add "Buy Milk" --due 2023-12-10
 # Output:
 # Enter the priority (1, 2, or 3), or press Enter to use default (1):
 # Created task 6
+
+# Example in action
+
+![example](https://github.com/abhyas01/Command-Line-Task-Manager/assets/91689587/ecc566c7-ef37-4450-8b4b-841cf8843c2b)
+
