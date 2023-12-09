@@ -110,7 +110,7 @@ class Tasks:
             print("No tasks to list.")
             return
         print("Tasks to list:")
-        tasks_to_list.sort(key=lambda x: (x.due_date, -x.priority, x.created), reverse=False)
+        tasks_to_list.sort(key=lambda x: (x.due_date if x.due_date else date.max, -x.priority, x.created), reverse=False)
         self.display_tasks(tasks_to_list, list_view=True)
 
     def report_tasks(self):
@@ -200,7 +200,7 @@ class Tasks:
         if not tasks_to_query:
             print("No matching tasks found.")
             return
-        tasks_to_query.sort(key=lambda x: (x.due_date, -x.priority), reverse=False)
+        tasks_to_query.sort(key=lambda x: (x.due_date if x.due_date else date.max, -x.priority), reverse=False)
         self.display_tasks(tasks_to_query, list_view=True)
 
 def get_priority_input():
