@@ -194,9 +194,12 @@ class Tasks:
     def query_tasks(self, query_terms):
         """Search for incompleted tasks that match search terms."""
         # Search for tasks that match query terms
-        tasks_to_query = [task for task in self.tasks if task.completed is None]
+        task_to_query = [task for task in self.tasks if task.completed is None]
+        tasks_to_query = []
         for term in query_terms:
-            tasks_to_query = [task for task in tasks_to_query if term.lower() in task.name.lower()]
+            for task in task_to_query:
+                if term.lower() in task.name.lower():
+                    tasks_to_query.append(task)
         if not tasks_to_query:
             print("No matching tasks found.")
             return
