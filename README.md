@@ -15,8 +15,7 @@ The application uses the argparse module to handle command-line arguments, allow
 
 In summary, this application is a great example of how OOP can be used to build a simple, yet powerful command-line tool. It demonstrates the use of classes, methods, and attributes, as well as concepts like encapsulation and abstraction. The code is well-structured and easy to understand, making it a good starting point for anyone interested in learning more about Python and OOP.
 
-This command-line task manager application can be made executable and run from any location on your computer. Follow the instructions below to set it up.
-
+#### Note: This command-line task manager application can be made executable and run from any location on your computer. Follow the instructions below to set it up.
 ## Steps
 
 ### 1. Clone the Repository
