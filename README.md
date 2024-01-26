@@ -13,7 +13,7 @@ The application is built using object-oriented programming (OOP) principles, whi
 
 The application uses the argparse module to handle command-line arguments, allowing users to interact with their task list directly from the terminal. This includes adding new tasks, listing all tasks, deleting tasks, marking tasks as completed, and querying tasks.
 
-In summary, this application is an example of how OOP can be used to build a powerful tool. The code is well-structured and easy to understand, making it a good starting point for anyone interested in learning more about Python and OOP.
+This application is an example of how OOP can be used to build a powerful tool. The code is well-structured and easy to understand, making it a good starting point for anyone interested in learning more about Python and OOP.
 
 #### Note: This command-line task manager application can be made executable and run from any location on your computer. Follow the instructions below to set it up.
 ## Steps
