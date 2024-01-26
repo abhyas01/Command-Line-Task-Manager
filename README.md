@@ -3,6 +3,18 @@
 
 ## Overview
 
+This Python-based command-line application is designed to help manage your tasks efficiently. It allows you to add, list, delete, and mark tasks as completed right from your terminal. The tasks are stored in a pickled file, ensuring that your data persists across sessions.
+
+The application is built using object-oriented programming (OOP) principles, which makes the code modular, reusable, and easy to maintain. Here's a brief overview of the classes used:
+
+1. **Task**: This class represents a single task. Each task has attributes such as `name`, `priority`, `due_date`, `unique_id`, `created`, and `completed`. The class also includes methods for string representation of the task and calculating the time remaining from the due date.
+
+2. **Tasks**: This class represents a collection of tasks. It includes methods for pickling (saving) tasks to a file, listing all tasks, reporting tasks, displaying tasks in a tabular format, adding a new task, deleting a task, marking a task as completed, and querying tasks based on search terms.
+
+The application uses the argparse module to handle command-line arguments, allowing users to interact with their task list directly from the terminal. This includes adding new tasks, listing all tasks, deleting tasks, marking tasks as completed, and querying tasks.
+
+In summary, this application is a great example of how OOP can be used to build a simple, yet powerful command-line tool. It demonstrates the use of classes, methods, and attributes, as well as concepts like encapsulation and abstraction. The code is well-structured and easy to understand, making it a good starting point for anyone interested in learning more about Python and OOP.
+
 This command-line task manager application can be made executable and run from any location on your computer. Follow the instructions below to set it up.
 
 ## Steps
